@@ -7,47 +7,95 @@
         .headerClass {
             width: 1024px;
             height: 50px;
-            background-color: #004080;
+            background-color: #273852;
             margin: 20px;
             padding: 20px;
             color: white;
         }
-
         .bodyClass {
             width: 1024px;
             margin: 10px;
             padding: 20px;
         }
-
         .newsImageClass {
             background-color: aliceblue;
         }
-
         .btnReading {
-            background-color: orange;
+            background-color: #D85748;
             width: 150px;
             height: 30px;
+			color:white;
         }
-
         .rightPaneClass {
             align-content: initial;
             vertical-align: text-top;
         }
-
         .footerClass {
-            align-content: center;
+            text-align: center;
             width: 1024px;
             height: 20px;
-            background-color: #004080;
+            background-color: #273852;
             margin: 20px;
             padding: 20px;
             color: white;
             font-size: 12px;
         }
-
         .newsHeaderClass {
             font-size: 18px;
+			color: #273852;
+			font-weight: bold;
         }
+		.subscribe {
+		background:black;
+		width:30%;
+		height:50%;
+		color: white;
+		}
+		#txtcategory
+		{
+		width:30%;
+		}
+		
+		.newsfeed
+		{
+		font-style:italic; 
+		font-size : 14px
+		}
+		
+		.myTable
+		{
+		border-bottom:ridge;
+		
+		}
+		.imageClass
+		{
+		width :25%; 
+		background-color:#D0D0D0
+		}
+		
+		.tdWidth
+		{
+		width:75%;
+		}
+		
+		.ddl
+		{
+		width:150px;
+		}
+		
+		.divSubscribe
+		{
+		align-items :center;
+		}
+		.tdFirstWidth
+		{
+		width : "75%";
+		}
+		.tdSecondWidth
+		{
+		width  : "25%";
+		}
+		
     </style>
 
 </head>
@@ -59,9 +107,9 @@
             <table>
                 <tr>
                     <td>
-                        <h2>  EPAM TODAY </h2>
+                        <h2>  NEWSFEED </h2>
                     </td>
-                    <td style="font-style:italic; font-size : 14px">
+                    <td class="newsfeed">
                         Yet Another newfeed
                     </td>
                 </tr>
@@ -69,26 +117,26 @@
 
         </div>
         <div id="Body" class="bodyClass">
-            <table style="border-bottom:ridge;border-bottom-color:wheat">
+            <table class="myTable">
                 <tr>
-                    <td width="75%">
-                        <div id="Content">
+                    <td class="tdFirstWidth">
+                        <div >
                             <table>
                                 <tr>
-                                    <td style="width :25%; background-color:grey">
-                                        <div id="newsImageClass"></div>
+                                    <td class="imageClass">
+                                        <div class="newsImageClass"></div>
                                     </td>
-                                    <td style="width : 75%;">
+                                    <td class="tdWidth">
                                         <div>
-                                            <text class="newsHeaderClass"> Title One </text>
+                                            <div class="newsHeaderClass"> Title One </div>
                                             <h6>Posted on 29 June //Category:Category One</h6>
-                                            <para>
+                                            <p>
                                                 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-                                            </para>
+                                            </p>
 
                                         </div>
                                         <div>
-                                            <button id="ContinueReading1" class="btnReading">Continue Reading </button>
+                                            <button  class="btnReading">Continue Reading </button>
                                         </div>
                                     </td>
 
@@ -100,13 +148,13 @@
                         <div id="rightPane" class="rightPaneClass">
                             <table>
                                 <tr>
-                                    <td style="padding-top:0px">
-                                        <text id="category">SELECT CATEGORY</text>
+                                    <td >
+                                        <div >SELECT CATEGORY</div>
                                     </td>
                                 </tr>
                                 <tr>
                                     <td >
-                                        <select style="width:150px">
+                                        <select class="ddl">
                                             <option>All</option>
                                             <option>One</option>
                                             <option>Two</option>
@@ -114,17 +162,18 @@
                                         </select>
                                     </td>
                                 </tr>
+																
                                 <tr>
                                     <td>
-                                        <text id="category">SUBSCRIBE</text>
+                                        <div >SUBSCRIBE</div>
                                     </td>
 
                                 </tr>
                                 <tr>
                                     <td>
-                                        <div style="align-items :center">
-                                            <textarea id="txtcategory"> </textarea>
-                                            <button id="Subscribe" style="background:#004080;width:100px;height:50px;color: white;">Subscribe</button>
+                                        <div  class="divSubscribe" >
+                                            <input type="text" id="txtcategory">
+                                            <button id="Subscribe" class="subscribe" > Subscribe</button>
                                         </div>
                                     </td>
 
@@ -137,26 +186,26 @@
                 </tr>
             </table>
            
-            <table style="border-bottom:ridge;border-bottom-color:wheat">
+            <table class="myTable">
                 <tr>
-                    <td width="75%">
-                        <div id="Content">
+                    <td class="tdFirstWidth" >
+                        <div>
                             <table>
                                 <tr>
-                                    <td style="width :25%; background-color:grey">
-                                        <div id="newsImageClass"></div>
+                                    <td class="imageClass">
+                                        <div class="newsImageClass"></div>
                                     </td>
-                                    <td style="width : 75%;">
+                                    <td class="tdWidth">
                                         <div>
-                                            <text class="newsHeaderClass"> Title Two </text>
+                                            <div class="newsHeaderClass"> Title Two </div>
                                             <h6>Posted on 29 June //Category:Category One</h6>
-                                            <para>
+                                            <p>
                                                 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-                                            </para>
+                                            </p>
 
                                         </div>
                                         <div>
-                                            <button id="ContinueReading1" class="btnReading">Continue Reading </button>
+                                            <button  class="btnReading">Continue Reading </button>
                                         </div>
                                     </td>
 
@@ -167,26 +216,26 @@
                     <td width="25%"></td>
                 </tr>
             </table>
-            <table style="border-bottom:ridge;border-bottom-color:wheat">
+            <table class="myTable">
                 <tr>
-                    <td width="75%">
-                        <div id="Content">
+                    <td class="tdFirstWidth">
+                        <div >
                             <table>
                                 <tr>
-                                    <td style="width :25%; background-color:grey">
-                                        <div id="newsImageClass"></div>
+                                    <td class="imageClass">
+                                        <div class="newsImageClass"></div>
                                     </td>
-                                    <td style="width : 75%;">
+                                    <td class="tdWidth">
                                         <div>
-                                            <text class="newsHeaderClass"> Title Three </text>
+                                            <div class="newsHeaderClass"> Title Three </div>
                                             <h6>Posted on 29 June //Category:Category One</h6>
-                                            <para>
+                                            <p>
                                                 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-                                            </para>
+                                            </p>
 
                                         </div>
                                         <div>
-                                            <button id="ContinueReading1" class="btnReading">Continue Reading </button>
+                                            <button  class="btnReading">Continue Reading </button>
                                         </div>
                                     </td>
 
